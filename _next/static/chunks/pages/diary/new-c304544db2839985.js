@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[746],{7518:function(a,b,c){(window.__NEXT_P=window.__NEXT_P||[]).push(["/diary/new",function(){return c(405)}])},405:function(a,b,c){"use strict";c.r(b);var d=c(5893),e=c(8014);b.default=function(){return(0,d.jsx)(e.Z,{})}}},function(a){a.O(0,[184,14,774,888,179],function(){return a(a.s=7518)}),_N_E=a.O()}])
