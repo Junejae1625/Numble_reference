@@ -39,8 +39,14 @@ export const GameSubTitle = styled.div`
   font-weight: 700;
   color: #999;
 `;
+export const GameInputButtonWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+`;
 export const GameInput = styled.input`
   height: 24px;
+  width: 136px;
   background-color: white;
   border: 1px solid #000;
   border-radius: 5px;
@@ -54,6 +60,7 @@ export const GameInput = styled.input`
 `;
 export const GameButton = styled.button`
   height: 24px;
+  width: 38px;
   font-weight: 700;
   font-size: 11px;
   color: #020101;

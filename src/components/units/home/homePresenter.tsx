@@ -3,18 +3,6 @@ import { homePageProps } from "./homeTypes";
 import { v4 as uuidv4 } from "uuid";
 
 export default function HomePresenter(props: homePageProps) {
-  const BGMItem = [
-    { song: "눈의꽃", artist: "박효신" },
-    { song: "사랑스러워", artist: "김종국" },
-    { song: "내사람:Partner For Life", artist: "SG워너비" },
-    { song: "Love Love Love", artist: "에픽하이" },
-    { song: "애인있어요", artist: "이은미" },
-    { song: "눈의꽃", artist: "박효신" },
-    { song: "사랑스러워", artist: "김종국" },
-    { song: "내사람:Partner For Life", artist: "SG워너비" },
-    { song: "Love Love Love", artist: "에픽하이" },
-    { song: "애인있어요", artist: "이은미" },
-  ];
   return (
     <>
       <S.TitleWrap>
@@ -58,16 +46,24 @@ export default function HomePresenter(props: homePageProps) {
       </S.BGMWrap>
       <S.BGMTitle>
         <S.Span1 isTitle={true}>
-          <input type="checkbox" />
+          <input
+            type="checkbox"
+            onChange={props.onClickCheckAll}
+            checked={props.BGMItem.length === props.isChecked.length}
+          />
         </S.Span1>
         <S.Span1 isTitle={true}>번호</S.Span1>
         <S.Span2 isTitle={true}>곡명</S.Span2>
         <S.Span3 isTitle={true}>아티스트</S.Span3>
       </S.BGMTitle>
-      {BGMItem.map((item, index) => (
+      {props.BGMItem.map((item, index) => (
         <S.BGMItem key={uuidv4()}>
           <S.Span1 isTitle={false}>
-            <input type="checkbox" />
+            <input
+              type="checkbox"
+              onChange={() => props.onClickChecked(item)}
+              checked={props.checked(item)}
+            />
           </S.Span1>
           <S.Span1 isTitle={false}>{index + 1}</S.Span1>
           <S.Span2 isTitle={false}>{item.song}</S.Span2>

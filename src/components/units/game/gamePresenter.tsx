@@ -14,7 +14,7 @@ export default function GamePresenter(props: IPropsGamePresenter) {
             <Styled.GameSubTitle>
               제시어 : {props.startWord}
             </Styled.GameSubTitle>
-            <div>
+            <Styled.GameInputButtonWrapper>
               <Styled.GameInput
                 ref={props.inputRef}
                 type="text"
@@ -24,7 +24,7 @@ export default function GamePresenter(props: IPropsGamePresenter) {
               <Styled.GameButton onClick={props.onClickSearch}>
                 입력
               </Styled.GameButton>
-            </div>
+            </Styled.GameInputButtonWrapper>
             <Styled.GameResult>{props.result}</Styled.GameResult>
           </Styled.Container>
           <Styled.Container>
