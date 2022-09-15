@@ -7,7 +7,6 @@ export default function HomePresenter(props: homePageProps) {
     <>
       <S.TitleWrap>
         <S.Title> Update news </S.Title>
-        <S.SubTitle>TODAY STORY</S.SubTitle>
       </S.TitleWrap>
       <S.HomeWrap>
         <div>
@@ -15,9 +14,9 @@ export default function HomePresenter(props: homePageProps) {
             props.datalist.map((item: any) => (
               <S.DiaryListWrap key={uuidv4()}>
                 <S.Tag src="/images/tag.svg" />
-                <div id={item?.number} onClick={props.onClickDataList}>
+                <S.DiaryTitle id={item?.number} onClick={props.onClickDataList}>
                   {item?.title}
-                </div>
+                </S.DiaryTitle>
               </S.DiaryListWrap>
             ))}
         </div>
@@ -32,7 +31,7 @@ export default function HomePresenter(props: homePageProps) {
           </S.LineWrap>
           <S.LineWrap>
             <S.InfoWrap>
-              게시판 <S.Span>0/15</S.Span>
+              게시판 <S.Span> 0/15</S.Span>
             </S.InfoWrap>
             <S.InfoWrap>
               방명록 <S.SpecialSpan>0/15</S.SpecialSpan>{" "}
@@ -42,7 +41,7 @@ export default function HomePresenter(props: homePageProps) {
       </S.HomeWrap>
       <S.BGMWrap>
         <S.Title> 추억의 BGM</S.Title>
-        <S.SubTitle> TODAY CHOICE </S.SubTitle>
+        <S.SubTitle> TODAY MUSIC </S.SubTitle>
       </S.BGMWrap>
       <S.BGMTitle>
         <S.Span1 isTitle={true}>

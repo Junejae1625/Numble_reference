@@ -55,9 +55,7 @@ export default function Layout(props: IPropsLayout) {
           <Styled.BodyWrapper>
             <Styled.LeftBody>
               <Styled.LeftBodyHeader>
-                <Styled.HeaderImageBox>
-                  본인이 원하는 사진을 넣어주세요
-                </Styled.HeaderImageBox>
+                <Styled.HeaderImageBox></Styled.HeaderImageBox>
                 <Styled.HeaderLine></Styled.HeaderLine>
               </Styled.LeftBodyHeader>
               <Styled.LeftBodyMain>

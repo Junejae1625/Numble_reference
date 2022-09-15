@@ -6,7 +6,7 @@ export default function GamePresenter(props: IPropsGamePresenter) {
   return (
     <>
       <Styled.Wrapper>
-        <LayoutSubTitle mainTitle="GAME" subTitle="TODAY CHOICE" />
+        <LayoutSubTitle mainTitle="Game" subTitle="TODAY CHOICE" />
         <Styled.ContainerWrapper>
           <Styled.Container>
             <img src="/images/train.png"></img>

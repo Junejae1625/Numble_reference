@@ -6,15 +6,15 @@ import HomePresenter from "./homePresenter";
 import { BGMTypes } from "./homeTypes";
 
 const BGMItem = [
-  { id: 0, song: "눈의꽃", artist: "박효신" },
+  { id: 0, song: "After LIKE", artist: "IVE (아이브)" },
   { id: 1, song: "사랑스러워", artist: "김종국" },
-  { id: 2, song: "내사람:Partner For Life", artist: "SG워너비" },
+  { id: 2, song: "Attention", artist: "NewJeans" },
   { id: 3, song: "Love Love Love", artist: "에픽하이" },
-  { id: 4, song: "애인있어요", artist: "이은미" },
+  { id: 4, song: "Pink Venom", artist: "BLACKPINK" },
   { id: 5, song: "눈의꽃", artist: "박효신" },
-  { id: 6, song: "사랑스러워", artist: "김종국" },
-  { id: 7, song: "내사람:Partner For Life", artist: "SG워너비" },
-  { id: 8, song: "Love Love Love", artist: "에픽하이" },
+  { id: 6, song: "Hype boy", artist: "NewJeans" },
+  { id: 7, song: "FOREVER 1", artist: "소녀시대" },
+  { id: 8, song: "그때 그 순간 그대로", artist: "WSG워너비" },
   { id: 9, song: "애인있어요", artist: "이은미" },
 ];
 

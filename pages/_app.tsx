@@ -21,6 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           property="og:description"
           content="No.1 부트캠프에서 만든 실전 취업용 포트폴리오 챌린지"
         />
+        <link rel="icon" href="/images/logo2.png" />
         <meta property="og:image" content="/images/codecamp.webp" />
       </Head>
       <ApolloProvider client={client}>

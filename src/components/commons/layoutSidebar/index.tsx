@@ -15,7 +15,7 @@ interface IPropsSideBars {
 
 const SideBars = styled.div<IPropsSideBars>`
   width: 57px;
-  height: 25px;
+  height: 34px;
   background-color: ${(props) => (props.isClick ? "#fff" : "#298eb5")};
   border: 1px solid #0f465e;
   margin-bottom: 10px;
@@ -23,11 +23,11 @@ const SideBars = styled.div<IPropsSideBars>`
   position: absolute;
   left: 779px;
   top: ${(props) => props.position};
-  color: ${(props) => (props.isClick ? "#298eb5" : "#fff")};
+  color: ${(props) => (props.isClick ? "black" : "#fff")};
   font-size: 13px;
   font-weight: 400;
   text-align: center;
-  line-height: 25px;
+  line-height: 33px;
   cursor: pointer;
 `;
 
