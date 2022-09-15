@@ -8,7 +8,7 @@ const cache = new InMemoryCache();
 
 function MyApp({ Component, pageProps }: AppProps) {
   const client = new ApolloClient({
-    uri: "http://practice.codebootcamp.co.kr/graphql",
+    uri: "https://practice.codebootcamp.co.kr/graphql",
     cache,
   });
 

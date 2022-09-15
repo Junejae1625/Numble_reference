@@ -41,11 +41,9 @@ export default function HomeContainer() {
   };
 
   const onClickChecked = (item: BGMTypes) => {
-    // 모든 원소가 조건에 맞으면 true (checkLis에 값이 없음)
     if (isChecked.every((el) => el.id !== item.id)) {
       setIsChecked([...isChecked, item]);
     } else {
-      // 체크된것만 제외하고 배열에 담는다.
       const result = isChecked.filter((el) => el.id !== item.id);
       setIsChecked(result);
     }
