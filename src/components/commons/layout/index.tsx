@@ -90,7 +90,9 @@ export default function Layout(props: IPropsLayout) {
           id={el.address}
           onClick={onClickPage}
           position={el.position}
-          isClick={router.asPath === el.address}
+          isClick={
+            router.asPath.split("/")[1] === `${el.address.split("/")[1]}`
+          }
           title={el.title}
         />
       ))}
