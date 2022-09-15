@@ -24,7 +24,8 @@ export const HeaderWrapper = styled.div`
 `;
 export const HeaderLeft = styled.div`
   width: 208px;
-  height: 100%;
+  height: 55px;
+
   color: black;
   font-weight: 400;
   font-size: 9px;
@@ -38,23 +39,25 @@ export const HeaderLeftSpan = styled.span`
   color: red;
 `;
 export const HeaderCenter = styled.div`
-  width: 340px;
+  width: 390px;
   color: #55b2d4;
+  font-family: "NeoDunggeunmo";
   font-weight: 700;
   font-size: 16px;
   text-align: left;
-  line-height: 60px;
+  line-height: 65px;
 `;
 export const HeaderRight = styled.div`
   width: 100px;
-  height: 100%;
+  height: 45px;
   color: black;
   font-weight: 500;
   font-size: 10px;
   text-align: right;
-  line-height: 65px;
+  line-height: 75px;
 `;
 export const HeaderRightSpan = styled.span`
+  height: 5px;
   color: #ff6400;
 `;
 
@@ -74,7 +77,7 @@ export const RightBody = styled.div`
   border-radius: 10px;
   border: 1px solid black;
   position: relative;
-  padding: 20px 30px 20px 30px;
+  padding: 10px 30px 20px 30px;
 `;
 export const LeftBody = styled.div`
   width: 208px;
@@ -98,7 +101,8 @@ export const LeftBodyHeader = styled.div`
 export const HeaderImageBox = styled.div`
   width: 100%;
   height: 133px;
-  background-color: #c4c4c4;
+  background-image: url("../../../images/CyworldProfile.jpeg");
+  background-repeat: no-repeat;
   color: black;
   display: flex;
   align-items: center;
@@ -106,7 +110,8 @@ export const HeaderImageBox = styled.div`
 `;
 export const HeaderLine = styled.div`
   width: 100%;
-  border: 1px dashed #000;
+  border: none;
+  border-bottom: 1px solid #ababab;
 `;
 
 export const LeftBodyMain = styled.div`
@@ -119,8 +124,9 @@ export const LeftBodyFooter = styled.div`
 `;
 export const FooterTitle = styled.div`
   width: 100%;
-  font-size: 11px;
-  font-weight: 400;
+  font-family: "Gill Sans";
+  font-size: 13px;
+  font-weight: 600;
   color: black;
   margin-bottom: 5px;
 `;

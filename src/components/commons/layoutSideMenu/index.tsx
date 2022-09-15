@@ -12,13 +12,14 @@ export const MainTitleWrapper = styled.div`
   margin-bottom: 10px;
 `;
 export const MainTitle = styled.span`
-  font-weight: 700;
-  font-size: 9px;
-  color: #999;
+  font-weight: 500;
+  font-size: 11px;
+  color: black;
+  line-height: 15px;
 `;
 export const MainTitleImage = styled.img`
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 13px;
   margin-right: 9px;
 `;
 

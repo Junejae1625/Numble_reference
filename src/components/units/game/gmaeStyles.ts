@@ -20,7 +20,7 @@ export const ContainerWrapper = styled.div`
 export const Container = styled.div`
   width: 222px;
   height: 165px;
-  border: 1px solid #999;
+  border: 1px solid #ababab;
   border-radius: 10px;
   background-color: #f6f6f6;
   color: black;
@@ -31,13 +31,16 @@ export const Container = styled.div`
   padding: 20px 0px;
 `;
 export const GameMainTitle = styled.div`
-  font-size: 11px;
+  font-family: "Gill Sans";
+  font-size: 12px;
   font-weight: 700;
+  color: black;
 `;
 export const GameSubTitle = styled.div`
-  font-size: 10px;
-  font-weight: 700;
-  color: #999;
+  font-size: 12px;
+  font-family: "Gill Sans";
+  font-weight: 500;
+  color: black;
 `;
 export const GameInputButtonWrapper = styled.div`
   width: 100%;
@@ -45,30 +48,33 @@ export const GameInputButtonWrapper = styled.div`
   justify-content: space-evenly;
 `;
 export const GameInput = styled.input`
-  height: 24px;
-  width: 136px;
+  font-family: "Gill Sans";
+  height: 25px;
+  width: 145px;
   background-color: white;
-  border: 1px solid #000;
+  border: 1px solid darkgray;
   border-radius: 5px;
-  padding-left: 8px;
+  padding-left: 5px;
+  padding-bottom: 3px;
   color: #555;
   outline: none;
-  margin-right: 4px;
+
   ::placeholder {
-    font-size: 11px;
+    font-size: 10px;
   }
 `;
 export const GameButton = styled.button`
   height: 24px;
-  width: 38px;
-  font-weight: 700;
-  font-size: 11px;
+  width: 40px;
+  font-size: 10.5px;
+  font-weight: 600;
   color: #020101;
   background-color: #fff;
-  border: 1px solid #000;
+  border: 1px solid darkgray;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.1s;
+  margin-left: -5px;
   :hover {
     background-color: #999;
     color: #eee;
@@ -77,7 +83,6 @@ export const GameButton = styled.button`
 export const GameResult = styled.div`
   font-size: 11px;
   font-weight: 700;
-  color: #999;
 `;
 export const LottoNumberWrapper = styled.div`
   width: 130px;
@@ -86,7 +91,7 @@ export const LottoNumberWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   background-color: #ffe400;
-  border: 1px solid #000;
+  border: 1px solid darkgray;
   border-radius: 8px;
   padding: 0px 7px;
   margin: 3px 0px;
@@ -101,9 +106,9 @@ export const LottoButton = styled.button`
   height: 24px;
   color: black;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 550;
   background: #ffffff;
-  border: 1px solid #000000;
+  border: 1px solid darkgray;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.1s;
