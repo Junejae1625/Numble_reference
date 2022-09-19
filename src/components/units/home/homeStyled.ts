@@ -6,7 +6,7 @@ export const TitleWrap = styled.div`
   width: 240px;
   align-items: center;
   padding-bottom: 1.5px;
-  border-bottom: 1.5px solid black;
+  border-bottom: 1.5px solid #ababab;
 `;
 export const Title = styled.div`
   color: #55b2d4;
