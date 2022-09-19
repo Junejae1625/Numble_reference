@@ -74,7 +74,7 @@ const LayoutSubTitle = (props: IPropsLayoutSubTitle) => {
         <MainTitleSpan>{props.mainTitle}</MainTitleSpan>
         <SubTitleSpan>{props.subTitle}</SubTitleSpan>
       </TitleBox>
-      {router.asPath === "/diary/new" && <WriteTitle>| 글 등록</WriteTitle>}
+      {router.asPath.includes("new") && <WriteTitle>| 글 등록</WriteTitle>}
       {router.asPath.includes("edit") && <WriteTitle>| 글 수정</WriteTitle>}
       {props.subTitle === "TODAY STORY" && (
         <WriteDiaryBtn onClick={onClickWrite}>다이어리 작성</WriteDiaryBtn>
