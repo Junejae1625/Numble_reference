@@ -11,7 +11,6 @@ export const Wrapper = styled.div`
 export const Title = styled.input`
   width: 100%;
   height: 18px;
-  color: #666666;
   border: 1px solid #dddddd;
   border-radius: 3px;
   font-size: 3px;
