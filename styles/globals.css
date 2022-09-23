@@ -31,13 +31,3 @@ a {
   box-sizing: border-box;
   font-family: "S-CoreDream-3Light";
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}

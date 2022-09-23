@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { MouseEvent, ReactChild, useEffect, useState } from "react";
+import { MouseEvent, ReactChild } from "react";
 import * as Styled from "../../units/layout/layoutStyles";
 import SideBar from "../layoutSidebar";
 import LayoutSideMenu from "../layoutSideMenu";
@@ -11,7 +11,7 @@ interface IPropsLayout {
 
 export default function Layout(props: IPropsLayout) {
   const router = useRouter();
-  const [isDark, setIsDark] = useState("dark");
+
   const titleMenu = [
     { src: "/images/name.png", title: "이름" },
     { src: "/images/phone.png", title: "phone" },
@@ -28,11 +28,6 @@ export default function Layout(props: IPropsLayout) {
       router.push(`${event.target.id}`);
     }
   };
-  useEffect(() => {
-    if (!window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setIsDark("light");
-    }
-  }, []);
 
   return (
     <>
@@ -76,9 +71,7 @@ export default function Layout(props: IPropsLayout) {
                 </Styled.SelectBox>
               </Styled.LeftBodyFooter>
             </Styled.LeftBody>
-            <Styled.RightBody isDark={isDark}>
-              {props.children}
-            </Styled.RightBody>
+            <Styled.RightBody>{props.children}</Styled.RightBody>
           </Styled.BodyWrapper>
         </Styled.InnerWrapper>
       </Styled.Wrapper>

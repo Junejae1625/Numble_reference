@@ -1,9 +1,5 @@
 import styled from "@emotion/styled";
 
-interface IPropsRightBody {
-  isDark: string;
-}
-
 export const Wrapper = styled.div`
   background-image: url("/images/cyworldBackground.png");
   width: 1204px;
@@ -68,9 +64,6 @@ export const BodyWrapper = styled.div`
 `;
 
 export const RightBody = styled.div`
-  @media (prefers-color-scheme: ${(props: IPropsRightBody) => props.isDark}) {
-    color: black;
-  }
   width: 516px;
   height: 435px;
   background-color: white;
